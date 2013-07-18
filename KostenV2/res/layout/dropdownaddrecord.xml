@@ -1,0 +1,164 @@
+ <RelativeLayout 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"   
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp" 
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dialogbox"> 
+     
+  <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"   
+       >
+    
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/editbox"    
+        >
+      
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+	      <RelativeLayout 
+    		android:layout_width="0dp"
+    		android:layout_height="wrap_content"
+	    	android:layout_weight=".80"
+    		android:background="@android:color/transparent">
+      
+      		<EditText
+ 		       android:id="@+id/txtBetrag"
+ 		       android:layout_width="fill_parent"
+  		       android:layout_height="wrap_content"
+		       android:background="@android:color/transparent"
+ 		       android:ems="10"
+		       android:inputType="numberDecimal"
+		       android:hint="@string/hint_betrag"
+ 		       android:textColorHint="#BCBCBC"
+ 		       android:paddingLeft="6dp"
+      		   android:paddingRight="6dp"
+			   android:paddingBottom="6dp"
+               android:paddingTop="6dp"
+               android:textColor="@android:color/black"/>
+		</RelativeLayout>
+
+       
+       <RelativeLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="wrap_content"
+    	android:layout_weight=".20"
+    	android:background="@android:color/transparent">
+   	   
+       <ImageButton
+           android:id="@+id/imageButton1"
+           android:layout_width="22dp"
+           android:layout_height="22dp"
+           android:background="?android:attr/selectableItemBackground"
+           android:src="@drawable/expand" 
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="5dp"/>       
+       </RelativeLayout>
+       </LinearLayout>
+</RelativeLayout>
+
+      
+    <AutoCompleteTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/editbox"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/hint_titel"
+        android:textColorHint="#BCBCBC"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:textColor="@android:color/black"/>
+
+
+
+    <EditText
+        android:id="@+id/txtKategorie"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/editbox"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/hint_kategorie"
+        android:textColorHint="#BCBCBC"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:textColor="@android:color/black"/>
+
+
+
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal" >
+       
+    <RelativeLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="wrap_content"
+    	android:layout_weight=".50"
+    	android:layout_marginBottom="15dp">
+    
+        <Button
+			android:id="@+id/btn_save"
+			android:text="Save"
+			android:textColor="#FFFFFF"
+			android:textSize="20sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_save"
+			android:shadowColor="#000000"
+			android:shadowDx="1"
+			android:shadowDy="1"
+			android:shadowRadius="5"
+			android:layout_marginLeft="18dp"/>
+    </RelativeLayout>	
+    
+    <RelativeLayout 
+    	android:layout_width="0dp"
+    	android:layout_height="wrap_content"
+    	android:layout_weight=".50"
+    	android:layout_marginBottom="15dp">
+    
+        <Button
+			android:id="@+id/btn_cancel"
+			android:text="Cancel"
+			android:textColor="#FFFFFF"
+			android:textSize="20sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_cancel"
+			android:shadowColor="#000000"
+			android:shadowDx="1"
+			android:shadowDy="1"
+			android:shadowRadius="5"
+			android:layout_marginLeft="32dp"/>
+    </RelativeLayout>		
+    
+</LinearLayout>
+</LinearLayout> 
+        </RelativeLayout>

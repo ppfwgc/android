@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/viewrow"
+    android:orientation="vertical" >
+
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+
+     	<TextView
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:layout_marginLeft="2dp"
+     	    android:text="Titel: "
+     	    android:textColor="@android:color/black"
+     	    android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.68"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:layout_marginLeft="2dp"
+     	    android:text="Betrag: "
+     	    android:textColor="@android:color/black"
+     	    android:textStyle="bold" />
+        
+        
+        <TextView
+            android:id="@+id/textBetrag"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="2dp"
+            android:nextFocusRight="@dimen/activity_horizontal_margin"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+        
+        <TextView
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:layout_marginLeft="2dp"
+     	    android:text="Datum: "
+     	    android:textColor="@android:color/black"
+     	    android:textStyle="bold" />
+                
+        <TextView
+            android:id="@+id/textDatum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.43"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="2dp"
+           android:text="Kat.: "
+           android:textColor="@android:color/black"
+           android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textKategorie"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="2dp"
+            android:nextFocusRight="@dimen/activity_horizontal_margin"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

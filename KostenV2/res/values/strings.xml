@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KostenV2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_betrag"><i>Betrag....</i></string>
+    <string name="hint_titel"><i>Was isches...</i></string>
+	<string name="hint_kategorie"><i>Wer zahlt...</i></string>
+    
+</resources>
