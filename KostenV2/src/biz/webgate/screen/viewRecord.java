@@ -39,7 +39,8 @@ public class viewRecord extends Activity implements OnClickListener{
 	public ArrayList<kosten> kostenliste;
 	private ListView listViewKosten;
 	private ImageButton btn_add;
-	private static final String [] TitleList= new String[] {"Brot", "Mittagessen"};
+//	private static final String [] TitleList= new String[] {"Brot", "Mittagessen"};
+	private static final ArrayList<String> TitleList = new ArrayList<String>();
 	private AutoCompleteTextView txtTitle;
 	public ArrayAdapter<String> adapter;
 	
@@ -189,7 +190,9 @@ public class viewRecord extends Activity implements OnClickListener{
 				
 				final EditText txtBetrag = (EditText) addDialog.findViewById(R.id.txtBetrag);
 				final EditText txtKategorie = (EditText) addDialog.findViewById(R.id.txtKategorie);
-
+				
+				TitleList.add("Brot");
+				TitleList.add("Zwieback");
 				txtTitle = (AutoCompleteTextView) addDialog.findViewById(R.id.txtTitle);
 				adapter = new ArrayAdapter<String>(this, R.layout.autocompletelist, TitleList);
 				txtTitle.setAdapter(adapter);
